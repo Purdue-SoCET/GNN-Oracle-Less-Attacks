@@ -1,0 +1,23 @@
+#!/bin/bash
+#SBATCH -A jappenze
+#SBATCH -p a10
+#SBATCH --job-name=omla_training
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --gres=gpu:1
+#SBATCH --mem=32G
+#SBATCH --time=04:00:00
+#SBATCH --output=omla_slurm_%j.out
+
+
+# Load Gilbreth environment modules
+module load learning/conda-2024.022
+module load cuda
+
+
+# Activate DGL virtual environment
+source activate omla_env
+
+
+# Run training
+bash training_script.sh
