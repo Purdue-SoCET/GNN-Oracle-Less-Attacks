@@ -6,7 +6,6 @@ import re
 import numpy as np
 
 benchmarks = ['c1355', 'c1908', 'c2670', 'c3540']
-
 results = {
     'Train_Acc': {b: {'Original': 0.0, 'Modified': 0.0} for b in benchmarks},
     'Val_Acc': {b: {'Original': 0.0, 'Modified': 0.0} for b in benchmarks},
