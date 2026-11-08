@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Note: This obviously requires the help of AI (ft. Gemini and Claude), but might only work to convert from GRAPLock version to the desired format of the source code, in addition to possible hidden discreprancies during conversion
+Might only work to convert from GRAPLock version to the desired format of the source code, in addition to possible hidden discreprancies during conversion
 
 WHAT THIS DOES
   1. Renames key inputs keyinputN -> KEYINPUTN (the Perl parser's key
